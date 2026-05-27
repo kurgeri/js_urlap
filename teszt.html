@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teszt.css">
+    <title>Teszt</title>
+</head>
+<body>
+
+    <h1 align="center">Számítógépek és programok</h1>
+
+<form id="szemelyes_adatok">
+<fieldset>
+<legend>Személyes adatok</legend>
+<p>Adja meg a nevét: <input type="text" id="nev"></input></p>
+<p>Adja meg a születési dátumát: <input type="date" id="szuletes"></p>
+<p>Adja meg a lakhelyét (város): <input type="text" id="alaktresz" size="15"></p>
+</fieldset>
+
+</form>
+<button id="test_start_button">Teszt indítása</button>
+<form id="test">
+<fieldset>
+    <legend>Történelem</legend>
+<ol>
+   <p> <li>feladat: Mikor alkották meg az első elektronikus számítógépet? </li>
+
+    <input type="radio" name="elso_gep" id="eg_1"><label for="eg_1">1944</label>
+    <input type="radio" name="elso_gep" id="eg_2"><label for="eg_2">1936</label>
+    <input type="radio" name="elso_gep" id="eg_3"><label for="eg_3">1934</label>
+    <input type="radio" name="elso_gep" id="eg_4"><label for="eg_4">1929</label>
+     <input type="radio" name="elso_gep" id="eg_5"><label for="eg_5">1939</label>
+   </p>
+
+   <p>   <li>feladat: Melyik híres magyar ember segített a számítógép megalkotásában?</li><input type="text" id="kerd2"></input>
+   </p>
+   <li>feladat: Melyik évben jött ki az első Windows verzíó?</li>
+    <input type="number" id="windows">
+
+</fieldset>
+
+
+<fieldset>
+
+    <legend>Hardware</legend>
+    <p>4. feladat: Válassza ki azt az 5 legfontosabb alkatrészeket, amik szükségesek egy számítógép műkődéshez. 
+    </p>
+<div id="alkatreszek">
+<input type="checkbox" id="alkatresz-1">
+        <label for="alaktresz-1">CPU</label>
+<input type="checkbox" id="alaktresz-2">
+        <label for="alaktresz-2">RAM</label>
+<input type="checkbox" id="alaktresz-3">
+        <label for="alaktresz-3">Alaplap</label>
+<input type="checkbox" id="alaktresz-4">
+        <label for="alaktresz-4">Háttértár</label>
+        <br>
+<input type="checkbox" id="alaktresz-5">
+        <label for="alaktresz-5">Tápegység</label>
+<input type="checkbox" id="alaktresz-6" checked>
+        <label for="alaktresz-6" >GPU</label>
+<input type="checkbox" id="alaktresz-7">
+        <label for="alaktresz-7">Hangkártya</label>
+<input type="checkbox" id="alaktresz-8">
+        <label for="alaktresz-8">Gépház</label>
+<input type="checkbox" id="alaktresz-9" checked>
+        <label for="alaktresz-9" >CD-DVD olvasó</label>
+</div>
+
+<div id="hattertarolok">
+        <p>5. feladat: Rendezze sorrendbe a legrégebbitől a legújabb háttértároló technológiákat</p>
+        <p><input type="number" size="1"> Floppy lemez
+        <input type="number" size="1"> CD
+        <input type="number" size="1"> DVD</p>
+        <p>
+        <input type="number" size="1"> Pendrive
+        <input type="number" size="1">HDD
+        <input type="number" size="1">SSD
+        <input type="number" size="1">Nvme SSD
+        </p>
+</div>
+</fieldset>
+
+
+<fieldset>
+    <legend>Software</legend>
+    <p>6. feladat: Soroljon fel legalább 6 darab programozási nyelvet:</p>
+    <textarea id="prog_nyelv"></textarea>
+    <p>7. feladat: Soroljon fel legalább 3 darab Linux disztrubóciót:</p>
+    <textarea id="linux_distro"></textarea>
+    <br>
+    <label for="szamrendeszerek">8. feladat: Melyik számrendszert használják a számítógépek?</label>
+        <select id="szamrendeszerek">
+            <option>Decimális (Base-10)</option>
+             <option>Hexadecimális (Base-16)</option>
+                <option>Bináris (Base-2)</option>
+                <option>Octal (Base-8)</option>
+                <option>Base64</option>
+        </select>
+
+<p>9. feladat: Mikor jött ki az első publikus ChatGPT modell?</p>
+
+    <input type="radio" name="elso_gpt" id="egpt_1"><label for="egpt_1">2022</label>
+    <input type="radio" name="elso_gpt" id="egpt_2"><label for="egpt_2">2020</label>
+    <input type="radio" name="elso_gpt" id="egpt_3"><label for="egpt_3">2023</label>
+    <input type="radio" name="elso_gpt" id="egpt_4"><label for="egpt_4">2018</label>
+     <input type="radio" name="elso_gpt" id="egpt_5"><label for="egpt_5">2012</label>
+<input type="radio" name="elso_gpt" id="egpt_6"><label for="egpt_6">2025</label>
+</fieldset>
+<h3>Írja le a véleményét a tesztről:</h3>
+<textarea spellcheck="true" lang="hu" id="velemeny"></textarea>
+<p>
+<button id="submit_button">Teszt befejezése</button>
+<button id="reset_button">Reset</button>
+</p>
+</form>
+
+
+
+
+
+    <script src="teszt.js"></script>
+</body>
+</html>
