@@ -65,3 +65,7 @@ input[type="text"]{
      border-radius:  20px;
      padding: 10px;
 }
+
+#idozito {
+    float: right;
+}
