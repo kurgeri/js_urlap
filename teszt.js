@@ -3,12 +3,12 @@ let teszt = document.getElementById("test")
 teszt.style.display = "none"
 
 let teszt_start = document.getElementById("test_start_button");
-// let idozito = document.getElementById(idozito);
+let idozito = document.getElementById("idozito");
 
-// function startStopper()
-// {
+function startStopper()
+{
     
-// }
+}
 
 
 teszt_start.addEventListener("click", () =>
@@ -22,6 +22,18 @@ reset_gomb.addEventListener("click", () => {
 location.replace(location.href)
 })
 
+
+let teszt_vege =document.getElementById("submit_button")
+let tabla = "<table border=1>"
+teszt_vege.addEventListener("click", () =>
+{
+for (let i = 0; i < 10; i++ )
+{
+    tabla += "<tr>"
+}
+
+
+})
 
 
 

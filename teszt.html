@@ -26,18 +26,21 @@
 <fieldset>
     <legend>Történelem</legend>
 <ol>
-   <p> <li>feladat: Mikor alkották meg az első elektronikus számítógépet? </li>
+   <p> <li>feladat: Mikor alkották meg az első elektronikus számítógépet?              Pontszám: 1/<span id="pont_egy"></span> </li>
+
 
     <input type="radio" name="elso_gep" id="eg_1"><label for="eg_1">1944</label>
     <input type="radio" name="elso_gep" id="eg_2"><label for="eg_2">1936</label>
     <input type="radio" name="elso_gep" id="eg_3"><label for="eg_3">1934</label>
     <input type="radio" name="elso_gep" id="eg_4"><label for="eg_4">1929</label>
      <input type="radio" name="elso_gep" id="eg_5"><label for="eg_5">1939</label>
+        
    </p>
 
-   <p>   <li>feladat: Melyik híres magyar ember segített a számítógép megalkotásában?</li><input type="text" id="kerd2"></input>
+   <p>   <li>feladat: Melyik híres magyar ember segített a számítógép megalkotásában?   Pontszám: 1/<span id="pont_ketto"></span></li><input type="text" id="kerd2"></input>
+
    </p>
-   <li>feladat: Melyik évben jött ki az első Windows verzíó?</li>
+   <li>feladat: Melyik évben jött ki az első Windows verzíó? Pontszám: 1/<span id="pont_harom"></span></li>
     <input type="number" id="windows">
 
 </fieldset>
@@ -46,7 +49,8 @@
 <fieldset>
 
     <legend>Hardware</legend>
-    <p>4. feladat: Válassza ki azt az 5 legfontosabb alkatrészeket, amik nélkülönözhetetlen egy számítógép műkődéshez. 
+    <p>4. feladat: Válassza ki azt az 5 legfontosabb alkatrészeket, amik nélkülönözhetetlen egy számítógép műkődéshez.
+        <br> Pontszám: 5/<span id="pont_negy"></span>
     </p>
 <div id="alkatreszek">
 <input type="checkbox" id="alkatresz-1">
@@ -72,6 +76,7 @@
 
 <div id="hattertarolok">
         <p>5. feladat: Rendezze sorrendbe a legrégebbitől a legújabb háttértároló technológiákat</p>
+        Pontszám: 7/<span id="pont_ot"></span>
         <p><input type="number" size="1"> Floppy lemez
         <input type="number" size="1"> CD
         <input type="number" size="1"> DVD</p>
@@ -88,6 +93,7 @@
 
 
         <p>6.feladat: Párosítsa össze a képeket a fogalmakkal! </p>
+                Pontszám: 5/<span id="pont_hat"></span>
         <!-- Kép gépi alkatrészekről pl. GPU, Sound card, CPU stb  -->
 </div>
 </fieldset>
@@ -95,10 +101,10 @@
 
 <fieldset>
     <legend>Software</legend>
-    <p>7. feladat: Soroljon fel legalább 6 darab programozási nyelvet:</p>
-    <textarea id="prog_nyelv"></textarea>
-    <p>8. feladat: Soroljon fel legalább 3 darab Linux disztrubóciót:</p>
-    <textarea id="linux_distro"></textarea>
+    <p>7. feladat: Soroljon fel legalább 6 darab programozási nyelvet:</p>      
+    <textarea id="prog_nyelv"></textarea>  Pontszám: 6/<span id="pont_het"></span>
+    <p>8. feladat: Soroljon fel legalább 3 darab Linux disztrubóciót:</p>  
+    <textarea id="linux_distro"></textarea>Pontszám: 3/<span id="pont_nyolc"></span>
     <br>
     <label for="szamrendeszerek">9. feladat: Melyik számrendszert használják a számítógépek?</label>
         <select id="szamrendeszerek">
@@ -108,8 +114,9 @@
                 <option>Octal (Base-8)</option>
                 <option>Base64</option>
         </select>
+         Pontszám: 1/<span id="pont_kilenc"></span>
 
-<p>10. feladat: Mikor jött ki az első publikus ChatGPT modell?</p>
+<p>10. feladat: Mikor jött ki az első publikus ChatGPT modell?  Pontszám: 1/<span id="pont_tiz"></span></p>
 
     <input type="radio" name="elso_gpt" id="egpt_1"><label for="egpt_1">2022</label>
     <input type="radio" name="elso_gpt" id="egpt_2"><label for="egpt_2">2020</label>
@@ -126,7 +133,9 @@
 </p>
 </form>
 
+<div id="vegeredmeny_tabla_perfeladat"></div> <!--Ide jön majd a feladatok szerinti összegzés-->
 
+<div id="vegosszeredmeny"></div> <!--Össz pont + százalék-->
 
 
 
