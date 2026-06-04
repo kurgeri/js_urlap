@@ -25,13 +25,18 @@ location.replace(location.href)
 
 let teszt_vege =document.getElementById("submit_button")
 let tabla = "<table border=1>"
+tabla += "<tr>"
+tabla += "<th></th>"
 teszt_vege.addEventListener("click", () =>
 {
 for (let i = 0; i < 10; i++ )
 {
-    tabla += "<tr>"
+   tabla += `<th>${i+1}. feladat</th>`
 }
+tabla += "<th>Összesen</th></tr>"
 
+tabla += "<tr><td>Elérhető pontszámok</td><td>1</td><td>1</td><td>1</td><td>5</td><td>7</td><td>5</td><td>6</td><td>3</td><td>1</td><td>1</td></tr>"
+tabla += "<tr><th>Elért pontszám</th>"
 
 })
 
